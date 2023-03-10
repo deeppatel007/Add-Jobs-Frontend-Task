@@ -4,10 +4,10 @@ import SecondStepForm from './SecondStepForm';
 
 const Home = ({ buttonText }) => {
   const [showModal, setShowModal] = useState(false)
-  const [formData, setFormData] = useState({
+  const [jobData, setJobData] = useState({
     jobTitle: "",
-    CompanyName: "",
-    industaryName: "",
+    companyName: "",
+    industryName: "",
     locationName: "",
     minimumSalary: "",
     maximumSalary: "",
@@ -21,10 +21,10 @@ const Home = ({ buttonText }) => {
 
 
   const PageDisplay = () => {
-    if (formData.page === 1) {
-      return <FirstStepForm formData={formData} setFormData={setFormData} />;
-    } else if (formData.page == 2) {
-      return <SecondStepForm formData={formData} setFormData={setFormData} />;
+    if (jobData.pageNumber === 1) {
+      return <FirstStepForm jobData={jobData} setJobData={setJobData} />;
+    } else if (jobData.pageNumber == 2) {
+      return <SecondStepForm jobData={jobData} setJobData={setJobData} />;
     }
   };
   return (

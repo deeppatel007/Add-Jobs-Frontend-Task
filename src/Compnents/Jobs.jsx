@@ -32,22 +32,22 @@ const Jobs = (props) => {
                                         {items.companyName}
                                     </p>
                                     <p class=" text-base leading-normal">
-                                        {items.industry}
+                                        {items.industryName}
                                     </p>
                                     <p class="text-slate-300 mb-2 font-light">
-                                        {items.location}
+                                        {items.locationName}
                                     </p>
                                     <p class=" text-base">
                                         {items.remoteType !== "" ? items.remoteType : "()"}
                                     </p>
                                     <p class="text-base">
-                                        Experience: ({items.mainimumExperience} - {items.maximumExperience} years)
+                                        Experience: ({items.minimumExperience} - {items.maximumExperience} years)
                                     </p>
                                     <p class="text-base">
                                         INR: (&#8377;) {items.minimumSalary} - {items.maximumSalary} / Month
                                     </p>
                                     <p class="text-base">
-                                        {items.totalEmployee} employees
+                                        {items.numberOfEmployees} employees
                                     </p>
                                     {
                                         items.applyType === "QuickApply" ?
