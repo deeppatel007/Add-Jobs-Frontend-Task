@@ -1,18 +1,4 @@
 import { useState } from "react";
-/*
- jobTitle: "",
-    CompanyName: "",
-    industaryName: "",
-    locationName: "",
-    minimumSalary: "",
-    maximumSalary: "",
-    minimumExperience: "",
-    maximumExperience: "",
-    numberOfEmployees: "",
-    pageNumber: 1,
-    applyType: "",
-    remoteType:"",
-*/
 
 const FirstStepForm = ({ jobData, setJobData }) => {
   const [isEmptyTitle, setisEmptyTitle] = useState(false)

@@ -2,7 +2,7 @@ import JobPage from "./Compnents/Home.jsx";
 function App() {
   return (
     <>
-    <JobPage buttonText="add jobs" class="font-poppins"></JobPage>
+    <JobPage buttonText="Create Jobs" class="font-poppins"></JobPage>
     </>
     
   );
