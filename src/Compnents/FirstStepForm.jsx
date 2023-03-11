@@ -62,25 +62,30 @@ const FirstStepForm = ({ jobData, setJobData }) => {
             <div class="text-xl">
               Create a Job
               <div class= "pt-6">
-                <label class="block text-sm pb-1 font-medium text-gray-900 " >Job title<span className="text-red-600">*</span></label>
+                <label class="block text-sm pb-1 font-medium text-gray-900 " >Job title<span className="text-red-600">*</span>
+                {
+                  isEmptyTitle && <span class="text-red-500 text-xs pl-1">This field is required</span>
+                }
+                </label>
                 <input type="text" class=" font-normalh-9 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-5 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="ex. UX UI Designer" name="jobTitle" value={jobData.jobTitle} onChange={(e) => handleOnChange(e)} required />
-                {
-                  isEmptyTitle && <p class="text-red-500 text-xs pt-1">This field is required</p>
-                }
+                
               </div>
               <div class = "pt-6">
-                <label class="pb-1 font-normal block text-sm font-medium text-gray-900 ">Company name<span className="text-red-600">*</span></label>
+                <label class="pb-1 font-normal block text-sm font-medium text-gray-900 ">Company name<span className="text-red-600">*</span>
+                {
+                  isEmptyCompanyName && <span class="text-red-500 text-xs pl-1">This field is required</span>
+                }
+                </label>
                 <input type="text" class=" h-9 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-5 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="ex. Google" name="companyName" value={jobData.companyName} onChange={(e) => handleOnChange(e)} required />
-                {
-                  isEmptyCompanyName && <p class="text-red-500 text-xs pt-1">This field is required</p>
-                }
+            
               </div>
               <div class = "pt-6">
-                <label class="pb-1 block text-sm font-medium text-gray-900 ">Industry<span className="text-red-600">*</span></label>
-                <input type="text" id="company" class=" font-normal h-9 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-5 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="ex. Information Technology" name="industryName" value={jobData.industryName} onChange={(e) => handleOnChange(e)} required />
+                <label class="pb-1 block text-sm font-medium text-gray-900 ">Industry<span className="text-red-600">*</span>
                 {
-                  isEmptyIndustryName && <p class="text-red-500 text-xs pt-1">This field is required</p>
+                  isEmptyIndustryName && <span class="text-red-500 text-xs pl-1">This field is required</span>
                 }
+                </label>
+                <input type="text" id="company" class=" font-normal h-9 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-5 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="ex. Information Technology" name="industryName" value={jobData.industryName} onChange={(e) => handleOnChange(e)} required />
               </div>
               <div class="grid gap-6 md:grid-cols-2 pt-6">
                 <div>

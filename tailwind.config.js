@@ -17,7 +17,8 @@ module.exports = {
       60.5:'244.5px',
       208: '830px',
       30:'118px',
-      37: '147px'
+      37: '147px',
+      1873: '1873px'
 
     },
     borderRadius:{
@@ -25,7 +26,7 @@ module.exports = {
       5: '5px'
     },
     margin:{
-      85: '10px',
+      85: '85px',
       30: '30px',
       49: '49px'
     }

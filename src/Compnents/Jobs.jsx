@@ -18,7 +18,7 @@ const Jobs = (props) => {
         <>
             {
                 jobs ?
-                    <div class="   grid grid-cols-1 overflow-y-auto absolute overflow-x-hidden w-full z-50 md:grid-cols-2 sm:grid-cols-2">
+                    <div class=" ml-85 grid grid-cols-1 w-1873 overflow-y-auto absolute z-50 md:grid-cols-2 sm:grid-cols-2">
                         {jobs.map((items, key) => (
                             <div class="flex flex-col mb-49 mt-30 w-208 h-80 bg-white border rounded-lg md:flex-row px-6 py-4" key={key}>
 
@@ -27,7 +27,7 @@ const Jobs = (props) => {
                                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png"
                                     alt="image"
                                 />
-                                <div class="justify-start pl-2 flex flex-col ">
+                                <div class="pl-2 ">
                                     <p class="text-2xl  tracking-tight">
                                         {items.companyName}
                                     </p>
