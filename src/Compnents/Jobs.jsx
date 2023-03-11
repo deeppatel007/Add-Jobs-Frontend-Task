@@ -18,9 +18,9 @@ const Jobs = (props) => {
         <>
             {
                 jobs ?
-                    <div class=" ml-85 grid grid-cols-1 w-1873 overflow-y-auto absolute z-50 md:grid-cols-2 sm:grid-cols-2">
+                    <div class="grid  grid-cols-1 w-1873 overflow-y-auto absolute z-50 md:grid-cols-2 sm:grid-cols-2">
                         {jobs.map((items, key) => (
-                            <div class="flex flex-col mb-49 mt-30 w-208 h-80 bg-white border rounded-lg md:flex-row px-6 py-4" key={key}>
+                            <div class="ml-85 flex flex-col mb-49 mt-30 w-208 h-80 bg-white border rounded-lg md:flex-row px-6 py-4" key={key}>
 
                                 <img
                                     class=" w-12 h-12 rounded"
