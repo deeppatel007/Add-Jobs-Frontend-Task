@@ -21,13 +21,13 @@ const SecondStepForm = ({ jobData, setJobData }) => {
                 showJobs !== true ?
                     <div class="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
                         <div class="bg-white shadow-md rounded-10 px-8 py-8 h-141 w-145 ">
-                        <div>
-            <span class="display-block top-3">
-              <span class="float-right right-0 text-base bold text-base leading-6">step 2</span>
-            </span>
-          </div>
-          <div class="text-xl">
-            <span class="w-28 leading-7 text-xl">Create a Job</span>
+                            <div>
+                                <span class="display-block top-3">
+                                    <span class="float-right right-0 text-base bold text-base leading-6">step 2</span>
+                                </span>
+                            </div>
+                            <div >
+                                <span class="w-28 leading-7 text-xl">Create a Job</span>
 
                                 <div class="pt-6">
                                     <label class=" block text-sm font-medium text-gray-900 w-77">Experience</label>

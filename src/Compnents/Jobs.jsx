@@ -34,7 +34,7 @@ const Jobs = (props) => {
                                     <p class=" text-base leading-normal">
                                         {items.industryName}
                                     </p>
-                                    <p class="text-slate-300 mb-6 font-light">
+                                    <p class="text-slate-500 mb-6 font-light">
                                         {items.locationName}
                                     </p>
                                     <p class=" text-base mb-2">
@@ -52,11 +52,11 @@ const Jobs = (props) => {
                                     {
                                         items.applyType === "QuickApply" ?
                                             <button class="w-30 h-10 text-sm text-white 0 bg-sky-500 hover:bg-white hover:text-blue-500 rounded shadow border">
-                                                <span class="pt-2 pb-2 pl-4 pr-4" >Apply Now</span>
+                                                <span class="pt-2 pb-2 pl-4 pr-4 font-medium text-base	" >Apply Now</span>
                                             </button>
                                             :
-                                            <button class="w-37 h-10 bg-transparent hover:bg-sky-500 text-sky-400 hover:text-white  border border-sky-400	 hover:border-transparent rounded">
-                                            <span class="pt-2 pb-2 pl-4 pr-4" >External apply</span>
+                                            <button class=" w-37 h-10 bg-transparent hover:bg-sky-500 text-sky-400 hover:text-white  border border-sky-400	 hover:border-transparent rounded">
+                                                <span class="pt-2 pb-2 pl-4 pr-4 font-medium text-base" >External apply</span>
                                             </button>
                                     }
                                 </div>
